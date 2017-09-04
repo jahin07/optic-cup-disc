@@ -21,7 +21,8 @@ Ar = Ar - Ar.mean() - Aro.std() #Preprocessing Red
 
 Mr = Ar.mean()                           #Mean of preprocessed red
 SDr = Ar.std()                           #SD of preprocessed red
-Thr = 49.5 - 12 - Ar.std()               #OD Threshold
+# Thr = 49.5 - 12 - Ar.std()               #OD Threshold
+Thr = Ar.std()
 print Thr
 
 Ag = Ago - Ago.mean()           #Preprocessing Green
